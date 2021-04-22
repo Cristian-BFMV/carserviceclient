@@ -8,7 +8,7 @@ import { OwnersService } from '../shared/owner/owner.service';
 })
 export class CarCardComponent implements OnInit {
   @Input() car: any;
-  owner: any = {};
+  owner: any;
 
   constructor(private ownersService: OwnersService) {}
 
