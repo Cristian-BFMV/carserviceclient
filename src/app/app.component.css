@@ -1,0 +1,20 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin: 0 0.2rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

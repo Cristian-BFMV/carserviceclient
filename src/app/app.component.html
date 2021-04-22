@@ -1,5 +1,9 @@
-<mat-toolbar color="primary">
-  <span>Welcome to {{title}}!</span>
+<mat-toolbar color="primary" class="navigation-container">
+  <h1>Welcome to {{ title }}!</h1>
+  <div class="navigation">
+    <a [routerLink]="['/car-list']" class="nav-link">Car list</a>
+    <a [routerLink]="['/owner-list']" class="nav-link">Owner list</a>
+  </div>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
