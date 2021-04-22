@@ -1,0 +1,10 @@
+<mat-list-item>
+  <img mat-list-avatar src="{{ car.giphyUrl }}" alt="{{ car.name }}" />
+  <h3 mat-line>
+    <a mat-button [routerLink]="['/car-edit', car.id]">{{ car.name }}</a>
+    <ng-container *ngIf="owner">
+      <span>Owner: {{ owner.name }}</span>
+      <span>Owner DNI{{ owner.dni }}</span>
+    </ng-container>
+  </h3>
+</mat-list-item>
