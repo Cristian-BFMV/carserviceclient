@@ -20,3 +20,7 @@ En este componente tendremos el formulario para crear o actualizar un owner, est
 ## Componente de car-edit
 
 En este componente se agrego en el formulario un nuevo campo select de html para asociar un owner al car a editar, este select debe ser "llenado" de forma dinamica para dar la opción al usuario de escoger un owner que haya sido registrado en la aplicación, esto fue posible a través de la utilización del método getAll del servicio de owner para obtener todos los owners en el backend y poderlos renderizar en dicho select.
+
+## Componente de car-card
+
+Este componente se creo con la finalidad de renderizar la información del owner de cada uno de los vehiculos, esto a través de hacer un petición en el ngOninit con la información del ownerDni que contiene cada car, esto último mediante el uso de una petición HTTP con el servicio de owner.

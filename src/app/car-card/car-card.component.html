@@ -4,7 +4,7 @@
     <a mat-button [routerLink]="['/car-edit', car.id]">{{ car.name }}</a>
     <ng-container *ngIf="owner">
       <span>Owner: {{ owner.name }}</span>
-      <span>Owner DNI{{ owner.dni }}</span>
+      <span>Owner DNI: {{ owner.dni }}</span>
     </ng-container>
   </h3>
 </mat-list-item>
